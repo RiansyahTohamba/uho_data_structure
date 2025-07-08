@@ -1,5 +1,5 @@
 const { expect, describe, it } = require('@jest/globals');
-const { sort, rotateLeft } = require('./index');
+const { sort, rotateLeft } = require('./bubble');
 
 describe('sort', () => {
     describe('when the array is already sorted', () => {
