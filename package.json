@@ -1,0 +1,18 @@
+{
+  "name": "uho_data_structure",
+  "version": "1.0.0",
+  "description": "js module for students",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "data",
+    "structure"
+  ],
+  "author": "riansyah",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^30.0.4"
+  }
+}
