@@ -6,4 +6,4 @@ kuliah struktur data UHO using node
 1. install dependencies
 npm i
 
-2. install vs extension 'JEST RUNNER'
+2. install vs-extension 'JEST RUNNER'
