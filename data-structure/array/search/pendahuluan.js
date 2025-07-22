@@ -1,20 +1,16 @@
 function cari(basisData, nilaiCari){
-    hasil = `${nilaiCari} tidak ditemukan`
+    hasil = `Maaf, ${nilaiCari} tidak lulus CPNS, nama tidak ditemukan`
     for (let idx=0; idx<basisData.length; idx++) {
-        console.log(basisData[idx])
         if (nilaiCari == basisData[idx]) {
-            hasil = `${nilaiCari} ditemukan pada index ke-${idx+1}`;
-            return hasil
+            hasil = `Selamat, ${nilaiCari} Lulus! dia berada pada index ke-${idx+1}`;
         }
     }
     return hasil
 }
 
+module.exports = {cari}
 
-const basisDataNilai = [1, 3, 12, 23, 34, 56, 62, 98, 99];
-const nilaiYgDicari = 12
-const hasilCari = cari(basisDataNilai, nilaiYgDicari)
-console.log(hasilCari)
+// console.log(hasilCari)
 
 
 // Pencarian linier (atau pencarian berurutan) adalah metode untuk menemukan elemen dalam daftar.

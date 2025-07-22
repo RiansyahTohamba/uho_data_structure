@@ -1,6 +1,5 @@
 function searchMatch(arr1, arr2) {
     let result = [];
-    //beginanswer
     for (let i = 0; i < arr1.length; i++) {
         for (let j = 0; j < arr2.length; j++) {
             if (arr1[i] === arr2[j]) {
@@ -9,7 +8,6 @@ function searchMatch(arr1, arr2) {
         }
     }
     return result;
-    //endanswer return result
 }
 
 let cars1 = ["Toyota", "Honda", "Nissan", "BMW", "Chevy", "Ford"];
