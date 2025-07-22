@@ -1,3 +1,22 @@
+function cari(basisData, nilaiCari){
+    hasil = `${nilaiCari} tidak ditemukan`
+    for (let idx=0; idx<basisData.length; idx++) {
+        console.log(basisData[idx])
+        if (nilaiCari == basisData[idx]) {
+            hasil = `${nilaiCari} ditemukan pada index ke-${idx+1}`;
+            return hasil
+        }
+    }
+    return hasil
+}
+
+
+const basisDataNilai = [1, 3, 12, 23, 34, 56, 62, 98, 99];
+const nilaiYgDicari = 12
+const hasilCari = cari(basisDataNilai, nilaiYgDicari)
+console.log(hasilCari)
+
+
 // Pencarian linier (atau pencarian berurutan) adalah metode untuk menemukan elemen dalam daftar.
 // Ini secara berurutan memeriksa setiap elemen daftar sampai kecocokan ditemukan atau seluruh daftar telah dicari.
 
@@ -30,18 +49,19 @@
 // compare x with element at position 4
 // SAME
 // Element is at position 4
-
-function linearSearch(arr, search) {
-    result = `${search} not found!`;
-    for (let i=0; i<arr.length; i++) {
-        if (search == arr[i]) {
-            result = `${search} found at position ${i+1}`;
-            return result
-        }
-    }
-    return result
-}
-
-let nums = [1, 3, 12, 23, 34, 56, 62, 98, 99];
-console.log(linearSearch(nums, 34));
-console.log(linearSearch(nums, 33));
+// function linearSearch(arr, search) {
+//     result = `${search} not found!`;
+//     for (let i=0; i<arr.length; i++) {
+//         if (search == arr[i]) {
+//             result = `${search} found at position ${i+1}`;
+//             return result
+//         }
+//     }
+//     return result
+// }
+// console.log(linearSearch(nilai, 34));
+// console.log(linearSearch(nilai, 33));
+// const arrMahasiswa = [
+//     {nama: "Hastra", nilai: 100},
+//     {nama: "Sechan", nilai: 70},
+// ]
